@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <title>WDD231 Home</title>
+  <meta name="description" content="Course certificate progress tracker that shows the courser completed and pending a long with the student's information" />
+  <meta name="author" content="Tu Nombre" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/style-large.css" />
+  <link rel="stylesheet" href="styles/style-small.css" />
+
+  <!-- Scripts -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Site Logo" width="20rem" height="20rem"/>
+      <span>Courses4You</span>
+      <button id="hamburger">&#9776;</button>
+    </div>
+
+    <nav id="menu" class="hidden">
+      <a href="index.html">Home</a>
+      <a href="#">Chamber</a>
+      <a href="#">Final</a>
+    </nav>
+
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+          <h2>ABOUT ME</h2>
+    <section id="student-info">
+  
+        <div id="aboutme">
+            <p>My name is Wiliam Antonio Bermudez Solis and I am from El Salvador. I am 23 years old now and I got currently living in 
+                Mexico City, Mexico. I got married on November 30th, 2024 and moved to Mexico on December 31st, 2024. 
+                I am studying Development of Software in BYU Pathway and have been doing it since January 2025. 
+            </p>
+        </div>
+
+        <div id="student-picture">
+            <img src="images/profile.jpeg" alt="Profile picture" loading="lazy" width="100%" height="100%">
+        </div>
+
+    </section>
+
+    <section>
+      <h2>Certificate Courses</h2>
+      <div id="filters">
+        <button id="allBtn">All</button>
+        <button id="wddBtn">WDD</button>
+        <button id="cseBtn">CSE</button>
+      </div>
+      <div id="courses" class="courses-grid"></div>
+      <p id="totalCredits"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="socials">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </div>
+    <p>&copy; <span id="year"></span> | Wiliam Bermudez | Mexico</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

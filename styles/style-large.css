@@ -1,0 +1,50 @@
+@media (min-width: 640px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menu a {
+    text-decoration: none;
+  }
+  
+  #menu.hidden {
+    display: flex !important;
+    flex-direction: row;
+    gap: 3rem;
+    display: inline-block;
+    color: #4A4A4A;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    margin: 0.2rem;
+    border: 2px solid #4A4A4A;
+    border-radius: 6px;     
+    background-color: white;
+    transition: all 0.3s ease;
+    
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+#student-info{
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    position: relative;
+}
+
+#student-info div{
+  background: white;
+  border-left: 6px solid #8FB9A8;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+
+.courses-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

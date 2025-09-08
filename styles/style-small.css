@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  background: #EAF4F2;
+  color: #4A4A4A;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background: #8FB9A8;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+}
+
+ #menu a {
+    text-decoration: none;
+  }
+
+#menu.hidden {
+  display: none;
+}
+
+#student-info{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#student-info div{
+  background: white;
+  border-left: 6px solid #8FB9A8;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+
+#student-picture{
+    width: 20rem;
+    height: 8rem;
+    object-fit: contain;
+}
+
+.courses-grid {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.course-card {
+  background: white;
+  border-left: 6px solid #8FB9A8;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.course-card.completed {
+  background: #F4EBD0;
+  border-left-color: #4A4A4A;
+  text-decoration: line-through;
+}
+
+
+#filters button{
+    border-radius: 2rem;
+    width: 6rem;
+    height: 2rem;
+
+}
+
+#filters button:hover{
+    background-color: #eabd85;
+}
+
+footer {
+  background: #8FB9A8;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+}
