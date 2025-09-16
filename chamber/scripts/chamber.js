@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const img = document.createElement("img");
         img.src = business.image;
         img.alt = business.name;
+        img.classList.add("business-img");
 
         const name = document.createElement("h3");
         name.textContent = business.name;

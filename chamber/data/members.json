@@ -26,6 +26,41 @@
     "url": "http://biz3.com",
     "image": "images/business3.webp",
     "level": "2"
-
+  },
+  {
+    "name": "Sahel Market Co.",
+    "tagline": "Bridging Traditions, Trading Futures",
+    "email": "contact@sahelmarket.tu",
+    "phone": "+223-1234-5678",
+    "url": "http://sahelmarket.tu",
+    "image": "images/business4.webp",
+    "level": "1"
+  },
+  {
+    "name": "Nile Canvas Studio",
+    "tagline": "Art Inspired by the Sands",
+    "email": "info@nilecanvas.tu",
+    "phone": "+223-2234-5678",
+    "url": "http://nilecanvas.tu",
+    "image": "images/business5.webp",
+    "level": "2"
+  },
+  {
+    "name": "Desert Rose Cafe",
+    "tagline": "Taste the Oasis",
+    "email": "hello@desertrose.tu",
+    "phone": "+223-4234-5678",
+    "url": "http://desertrose.tu",
+    "image": "images/business6.webp",
+    "level": "2"
+  },
+  {
+    "name": "Nomad Craft Collective",
+    "tagline": "Handmade from the Heart of Timbuktu",
+    "email": "contact@nomadcraft.tu",
+    "phone": "+223-6234-5678",
+    "url": "http://nomadcraft.tu",
+    "image": "images/business7.webp",
+    "level": "1"
   }
 ]
