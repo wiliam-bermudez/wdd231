@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Atelier de Couture",
+    "tagline": "Quality you can trust",
+    "email": "info@biz1.com",
+    "phone": "800-555-1234",
+    "url": "http://biz1.com",
+    "image": "images/business1.webp",
+    "level": "1"
+  },
+  {
+    "name": "Futurion",
+    "tagline": "Innovating the future",
+    "email": "info@biz2.com",
+    "phone": "800-555-5678",
+    "url": "http://biz2.com",
+    "image": "images/business2.webp",
+    "level": "3"
+
+  },
+  {
+    "name": "Elevare Consulting",
+    "tagline": "Your success, our mission",
+    "email": "info@biz3.com",
+    "phone": "800-555-9012",
+    "url": "http://biz3.com",
+    "image": "images/business3.webp",
+    "level": "2"
+
+  }
+]
