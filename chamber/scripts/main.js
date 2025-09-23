@@ -1,7 +1,7 @@
-import { setupMenu } from "./menu.js";
-import { loadWeather } from "./weather.js";
-import { loadSpotlights } from "./chamberHome.js";
-import { loadDirectory } from "./chamber.js";
+import { setupMenu } from "../menu.js";
+import { loadWeather } from "../weather.js";
+import { loadSpotlights } from "../chamberHome.js";
+import { loadDirectory } from "../chamber.js";
 
 setupMenu();
 
