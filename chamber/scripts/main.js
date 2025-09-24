@@ -1,8 +1,8 @@
 // main.js
-import { setupMenu } from "scripts/menu.js";
-import { loadWeather } from "scripts/weather.js";
-import { loadSpotlights } from "scripts/chamberHome.js";
-import { loadDirectory } from "scripts/chamber.js";
+import { setupMenu } from "./menu.js";
+import { loadWeather } from "./weather.js";
+import { loadSpotlights } from "./chamberHome.js";
+import { loadDirectory } from "./chamber.js";
 
 // Configurar el menú siempre
 setupMenu();
@@ -12,11 +12,11 @@ const path = window.location.pathname;
 
 // --- HOME PAGE ---
 if (path.includes("index.html") || path === "/" || path.endsWith("/")) {
-    loadWeather();           // carga el clima
-    loadSpotlights();        // carga spotlights filtrados nivel 2 y 3
+    loadWeather();           
+    loadSpotlights();        
 }
 
 // --- DIRECTORY PAGE ---
 if (path.includes("directory.html")) {
-    loadDirectory();         // carga todos los negocios
+    loadDirectory();         
 }
