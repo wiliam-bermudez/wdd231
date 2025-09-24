@@ -9,7 +9,7 @@ setupMenu();
 const path = window.location.pathname;
 
 const isPage = (page) => path.endsWith(page) || path.includes(page);
-if (isPage("index.html") || path === "/" || path.endsWith("/")) {
+if (isPage("index.html")) {
   loadWeather();
   loadSpotlights();
 }
