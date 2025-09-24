@@ -4,19 +4,16 @@ import { loadWeather } from "./weather.js";
 import { loadSpotlights } from "./chamberHome.js";
 import { loadDirectory } from "./chamber.js";
 
-// Configurar el menú siempre
 setupMenu();
 
-// Detectar la página actual
 const path = window.location.pathname;
 
-// --- HOME PAGE ---
-if (path.includes("/index.html")) {
-    loadWeather();           
-    loadSpotlights();        
+const isPage = (page) => path.endsWith(page) || path.includes(page);
+if (isPage("index.html") || path === "/" || path.endsWith("/")) {
+  loadWeather();
+  loadSpotlights();
 }
 
-// --- DIRECTORY PAGE ---
-if (path.includes("directory.html")) {
-    loadDirectory();         
+if (isPage("directory.html")) {
+  loadDirectory();
 }

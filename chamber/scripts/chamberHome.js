@@ -1,44 +1,41 @@
-function getLevelName(level) {
-    switch (level) {
-        case "1": return "Bronze";
-        case "2": return "Silver";
-        case "3": return "Gold";
-        default: return "Unknown";
-    }
-}
-
+// chamberHome.js
 export async function loadSpotlights() {
-    const spotlightContainer = document.getElementById("business-container");
-    if (!spotlightContainer) return;
+  const container = document.getElementById("spotlights-container");
+  if (!container) return; // evitar error si no existe
 
-    try {
-        const response = await fetch("data/members.json");
-        const members = await response.json();
+  try {
+    const response = await fetch("data/members.json");
+    const data = await response.json();
 
-        // Filter Silver (2) y Gold (3)
-        const eligible = members.filter(m => m.level === "2" || m.level === "3");
+    // Filtrar solo nivel 2 o 3
+    const filtered = data.filter(b => b.level === "2" || b.level === "3");
 
-        const shuffled = eligible.sort(() => 0.5 - Math.random());
-        const selected = shuffled.slice(0, Math.floor(Math.random() * 2) + 2);
+    // Mezclar aleatoriamente
+    const shuffled = filtered.sort(() => 0.5 - Math.random());
 
-        spotlightContainer.innerHTML = "";
+    // Seleccionar 2 o 3
+    const selected = shuffled.slice(0, Math.floor(Math.random() * 2) + 2);
 
-        selected.forEach(business => {
-            const card = document.createElement("div");
-            card.classList.add("business-card");
+    // Renderizar
+    container.innerHTML = "";
+    selected.forEach(business => {
+      const card = document.createElement("div");
+      card.classList.add("business-card");
 
-            card.innerHTML = `
-                <img src="${business.image}" alt="${business.name}">
-                <h3>${business.name}</h3>
-                <p><em>${business.tagline}</em></p>
-                <p><strong>Email:</strong> ${business.email}</p>
-                <p><strong>Phone:</strong> ${business.phone}</p>
-                <p><a href="${business.url}" target="_blank">Website</a></p>
-                <p><strong>Member level:</strong> ${getLevelName(business.level)}</p>
-            `;
-            spotlightContainer.appendChild(card);
-        });
-    } catch (err) {
-        console.error("Spotlights error:", err);
-    }
+      card.innerHTML = `
+        <img src="${business.image}" alt="${business.name}" class="business-img">
+        <h3>${business.name}</h3>
+        <p>${business.tagline}</p>
+        <p><strong>Email:</strong> ${business.email}</p>
+        <p><strong>Phone:</strong> ${business.phone}</p>
+        <p><a href="${business.url}" target="_blank">${business.url}</a></p>
+        <p><strong>Member level:</strong> ${business.level}</p>
+      `;
+      container.appendChild(card);
+    });
+
+  } catch (error) {
+    console.error("Error loading spotlights:", error);
+    container.innerHTML = "<p>Unable to load spotlight members.</p>";
+  }
 }
