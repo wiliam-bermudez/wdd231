@@ -1,24 +1,18 @@
 // chamberHome.js
 export async function loadSpotlights() {
   const container = document.getElementById("spotlights-container");
-  if (!container) return; // evitar error si no existe
+  if (!container) return; 
 
   try {
     const response = await fetch("data/members.json");
     const data = await response.json();
 
-    // Filtrar solo nivel 2 o 3
-    const filtered = data.filter(b => b.level === "2" || b.level === "3");
+    const filtered = data.filter(b => b.level == "2" || b.level == "3");
 
-    // Mezclar aleatoriamente
-    const shuffled = filtered.sort(() => 0.5 - Math.random());
-
-    // Seleccionar 2 o 3
-    const selected = shuffled.slice(0, Math.floor(Math.random() * 2) + 2);
 
     // Renderizar
     container.innerHTML = "";
-    selected.forEach(business => {
+    filtered.forEach(business => {
       const card = document.createElement("div");
       card.classList.add("business-card");
 
