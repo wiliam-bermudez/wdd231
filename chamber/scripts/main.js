@@ -11,7 +11,7 @@ setupMenu();
 const path = window.location.pathname;
 
 // --- HOME PAGE ---
-if (path.includes("index.html") || path === "/" || path.endsWith("/")) {
+if (path.includes("/index.html")) {
     loadWeather();           
     loadSpotlights();        
 }
