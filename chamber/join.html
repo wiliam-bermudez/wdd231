@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
 
     <!--JS-->
-    <script type="module" src="scripts/main.js"></script>
+    <script src="scripts/join.js" defer></script>
 
     <!--Linking favicon-->
   <link rel="icon" href="favicon.ico">
@@ -45,88 +45,128 @@
             </ul>
         </nav>
     </header>
-    <main class="container">
-    <section class="form-section">
-      <h2>Membership Application</h2>
-      <form method="get" action="thankyou.html">
-        
-        <label>
-          First Name:
-          <input type="text" name="firstName" title="Enter your first name"
-                 autocomplete="given-name" required>
-        </label>
+    <main class="container-join">
+        <section class="form-section">
+        <h2>Membership Application</h2>
+        <form method="get" action="thankyou.html" id="form-join">
+            
+            <label>
+            First Name:
+            <input type="text" name="firstName" title="Enter your first name"
+                    autocomplete="given-name" required>
+            </label>
 
-        <label>
-          Last Name:
-          <input type="text" name="lastName" title="Enter your last name"
-                 autocomplete="family-name" required>
-        </label>
+            <label>
+            Last Name:
+            <input type="text" name="lastName" title="Enter your last name"
+                    autocomplete="family-name" required>
+            </label>
 
-        <label>
-          Organization Title:
-          <input type="text" name="orgTitle" title="Enter your organizational title"
-                 autocomplete="organization-title"
-                 pattern="[A-Za-z\- ]{7,}">
-        </label>
+            <label>
+            Organization Title:
+            <input type="text" name="orgTitle" title="Enter your organizational title"
+                    autocomplete="organization-title"
+                    pattern="[A-Za-z\- ]{7,}">
+            </label>
 
-        <label>
-          Email:
-          <input type="email" name="email" title="Enter your email address"
-                 autocomplete="email" placeholder="example@domain.com" required>
-        </label>
+            <label>
+            Email:
+            <input type="email" name="email" title="Enter your email address"
+                    autocomplete="email" placeholder="example@domain.com" required>
+            </label>
 
-        <label>
-          Mobile Phone:
-          <input type="tel" name="phone" title="Enter your mobile phone"
-                 autocomplete="tel" required>
-        </label>
+            <label>
+            Mobile Phone:
+            <input type="tel" name="phone" title="Enter your mobile phone"
+                    autocomplete="tel" required>
+            </label>
 
-        <label>
-          Organization Name:
-          <input type="text" name="organization" title="Enter your business/organization name"
-                 autocomplete="organization" required>
-        </label>
+            <label>
+            Organization Name:
+            <input type="text" name="organization" title="Enter your business/organization name"
+                    autocomplete="organization" required>
+            </label>
 
-        <label>
-          Membership Level:
-          <select name="membership" title="Select membership level">
-            <option value="NP">NP Membership (Free)</option>
-            <option value="Bronze">Bronze Membership</option>
-            <option value="Silver">Silver Membership</option>
-            <option value="Gold">Gold Membership</option>
-          </select>
-        </label>
+            <label>
+            Membership Level:
+            <select name="membership" title="Select membership level">
+                <option value="NP">NP Membership (Free)</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select>
+            </label>
 
-        <label>
-          Organization Description:
-          <textarea name="orgDescription" title="Describe your business/organization"></textarea>
-        </label>
+            <label>
+            Organization Description:
+            <textarea name="orgDescription" title="Describe your business/organization"></textarea>
+            </label>
 
-        <input type="hidden" id="timestamp" name="timestamp">
+            <input type="hidden" id="timestamp" name="timestamp">
 
-        <input type="submit" value="Submit Application">
-      </form>
-    </section>
+            <input type="submit" value="Submit Application">
+        </form>
+        </section>
 
-    <aside class="membership-cards">
-      <h2>Membership Levels</h2>
-      <div class="card fade-in">
-        <h3>NP Membership</h3>
-        <a href="#npModal">More Info</a>
-      </div>
-      <div class="card fade-in">
-        <h3>Bronze Membership</h3>
-        <a href="#bronzeModal">More Info</a>
-      </div>
-      <div class="card fade-in">
-        <h3>Silver Membership</h3>
-        <a href="#silverModal">More Info</a>
-      </div>
-      <div class="card fade-in">
-        <h3>Gold Membership</h3>
-        <a href="#goldModal">More Info</a>
-      </div>
-    </aside>
+        <aside class="membership-cards">
+        <h2>Membership Levels</h2>
+        <div class="card fade-in">
+            <h3>NP Membership</h3>
+            <button id="npModal" class="text-link">More Info</button>
+            <dialog id="modal-NP">
+                <h2>NP Membership</h2>
+                <p>Joining our Chamber of Commerce as a Non-Profit Member provides your organization with
+                    valuable networking opportunities, increased visibility, and access to resources designed
+                    to support your mission. As a member, you'll be able to collaborate with other local non-profits,
+                    businesses, and community leaders to amplify your impact, advocate for causes important to your
+                    organization, and access exclusive training, events, and discounts. Our Chamber is committed to 
+                    strengthening the local economy and community, and by becoming a member, your non-profit will be
+                    part of a dynamic network dedicated to collective growth and success. </p>
+                <button id="closeModalNp">Close</button>
+            </dialog>
+        </div>
+        <div class="card fade-in">
+            <h3>Bronze Membership</h3>
+           <button id="Modalbronze" class="text-link">More Info</button>
+            <dialog id="modal-bronze">
+                <h2>Bronze Membership</h2>
+                <p>As a Bronze Member of our Chamber of Commerce, your business will gain essential support and
+                    visibility within the local business community. This membership provides access to networking
+                    opportunities, promotional listings, and invitations to Chamber events. Bronze members also receive
+                    access to valuable resources, such as basic business training and educational materials, helping you
+                    strengthen your business foundation. This level is perfect for small businesses or startups looking to
+                    build connections and grow within the local market.</p>
+                <button id="closeModalbronze" class="closeModal">Close</button>
+            </dialog>
+        </div>
+        <div class="card fade-in">
+            <h3>Silver Membership</h3>
+            <button id="Modalsilver" class="text-link">More Info</button>
+            <dialog id="modal-silver">
+                <h2>Silver Membership</h2>
+                <p>As a Silver Member of our Chamber of Commerce, your business will gain increased visibility,
+                    access to exclusive networking events, and the opportunity to connect with local leaders and
+                    potential partners. You'll receive promotional support, access to business resources like workshops
+                    and training, and priority invitations to key Chamber events. This level is perfect for businesses
+                    looking to expand their influence, engage with the local community, and enhance their growth potential.</p>
+                <button id="closeModalsilver">Close</button>
+            </dialog>
+        </div>
+        <div class="card fade-in">
+            <h3>Gold Membership</h3>
+            <button id="Modalgold" class="text-link">More Info</button>
+            <dialog id="modal-gold">
+                <h2>Gold Membership</h2>
+                <p>The Gold Membership offers the highest level of support and visibility. As a Gold Member,
+                    your business will enjoy all the benefits of the Silver Membership, plus exclusive opportunities
+                    for high-profile promotion, premier networking access, and priority placement in Chamber events.
+                    You’ll also have access to specialized resources and one-on-one consultation with Chamber leaders
+                    to help accelerate your business strategy. This membership is ideal for businesses looking for maximum
+                    exposure, influence, and growth opportunities in the community.</p>
+                <button id="closeModalgold">Close</button>
+            </dialog>
+        </div>
+        </aside>
   </main>
 
   <footer>
