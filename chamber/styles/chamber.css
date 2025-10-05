@@ -71,6 +71,7 @@ nav ul li a.active {
   cursor: pointer;
 }
 
+/* HOME.HTML*/
 /* HERO / MAIN IMAGE */
 .main-img {
   display: flex;
@@ -324,6 +325,11 @@ input[type="submit"]:focus {
   }
 
 
+
+  /* DISCOVER.HTML */
+    
+  
+
 /* FOOTER */
 footer {
   background: var(--color-primary);
@@ -345,7 +351,14 @@ footer {
 .social-media-footer img:hover {
   transform: scale(1.1);
 }
-/* RESPONSIVE */
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+  @media (max-width: 768px) and (min-width) {
+
+  }
+/*--------------------------------------------------------------------------------------------------------------------------
+
+/* RESPONSIVE - SMALL SCREENS*/ 
 @media (max-width: 768px) {
   nav ul {
     display: none;
@@ -438,5 +451,49 @@ footer {
     color: var(--color-secondary);
     text-decoration: underline;
 
+  }
+
+
+  /* DISCOVER.HTML*/
+
+  .business-card {
+    background: #fff;
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: transform 0.2s ease;
+
+    display: grid;
+    grid-template-areas: 
+    "photograph"
+    "name"
+    "description"
+    "address";
+  }
+  
+  .business-card:hover {
+  transform: translateY(-5px);
+  }
+
+  .business-card h2 {
+    margin: 1REM 10PX;
+    grid-area: name;
+  }
+
+  .business-card figure img{
+    width: 100%;
+    grid-area: photograph;
+  }
+  
+  .business-card address{
+    width: 100%;
+    grid-area: address;
+  }
+  
+
+  .business-card p{
+    width: 100%;
+    grid-area: description;
   }
 }

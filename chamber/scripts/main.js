@@ -3,6 +3,8 @@ import { setupMenu } from "./menu.js";
 import { loadWeather } from "./weather.js";
 import { loadSpotlights } from "./chamberHome.js";
 import { loadDirectory } from "./chamber.js";
+import { loadDiscover } from "./discover.js";
+
 
 setupMenu();
 
@@ -16,4 +18,8 @@ if (isPage("index.html")) {
 
 if (isPage("directory.html")) {
   loadDirectory();
+}
+
+if (isPage("discover.html")) {
+  loadDiscover();
 }
