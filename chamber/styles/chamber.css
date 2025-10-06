@@ -327,7 +327,52 @@ input[type="submit"]:focus {
 
 
   /* DISCOVER.HTML */
-    
+    #discover-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .business-card-dis {
+    background: #fff;
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: transform 0.2s ease;
+
+  }
+  
+  .business-card-dis:hover {
+  transform: translateY(-5px);
+  }
+
+  .business-card-dis h2 {
+    grid-area: name;
+  }
+
+  .business-card-dis figure img{
+    width: 175px;
+    grid-area: photograph;
+  }
+  
+  .business-card-dis address{
+    width: 100%;
+    grid-area: address;
+  }
+  
+
+  .business-card-dis p{
+    width: 100%;
+    grid-area: description;
+  }
+
+ .business-card-dis button{
+    width: 7rem;
+    height: 3rem;
+    grid-area: button;
+
+  }
+
   
 
 /* FOOTER */
@@ -352,8 +397,148 @@ footer {
   transform: scale(1.1);
 }
 
+/* MEDIUM SCREENS*/
 /*-------------------------------------------------------------------------------------------------------------------------*/
-  @media (max-width: 768px) and (min-width) {
+  @media (max-width: 1024px) {
+    nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--color-primary);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 1rem;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+
+  .info-section {
+    flex-direction: column;
+  }
+
+  .main-img img {
+    max-width: 25rem;
+    margin: 1rem auto;
+  }
+
+  .call-action {
+    margin: 2rem auto;
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column; 
+    gap: 2rem;
+  }
+   .container-join {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /* MEMBERSHIP CARDS */
+    .membership-cards {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .membership-cards h2 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .membership-cards .card {
+      background: #fff;
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      width: 100%;
+      text-align: center;
+      box-shadow: var(--shadow-md);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeSlideIn 0.8s ease forwards;
+    }
+
+    .membership-cards .card:nth-child(1) { animation-delay: 0.2s; }
+    .membership-cards .card:nth-child(2) { animation-delay: 0.4s; }
+    .membership-cards .card:nth-child(3) { animation-delay: 0.6s; }
+    .membership-cards .card:nth-child(4) { animation-delay: 0.8s; }
+
+    @keyframes fadeSlideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .membership-cards .card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: var(--color-primary);
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .membership-cards .card a:hover,
+    .membership-cards .card a:focus {
+      color: var(--color-secondary);
+      text-decoration: underline;
+
+    }
+
+
+    /* DISCOVER.HTML*/
+
+    #discover-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5px;
+    }
+
+    .business-card-dis {
+      display: flex;
+      grid-template-areas: 
+      "photograph name"
+      "photograph description"
+      "photograph address"
+      "button";
+      
+    }
+    
+    .business-card-dis:hover {
+    transform: translateY(-5px);
+    }
+
+    .business-card-dis h2 {
+      grid-area: name;
+    }
+
+    .business-card-dis figure img{
+      width: 150px;
+      grid-area: photograph;
+    }
+    
+    .business-card-dis address{
+
+      grid-area: address;
+    }
+    
+    .business-card-dis p{
+      grid-area: description;
+    }
+
+    .business-card-dis button{
+      width: 9rem;
+      grid-area: button;
+    }
+
 
   }
 /*--------------------------------------------------------------------------------------------------------------------------
@@ -455,45 +640,56 @@ footer {
 
 
   /* DISCOVER.HTML*/
+  #discover-container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
 
-  .business-card {
+  .business-card-dis {
     background: #fff;
-  border-radius: var(--radius-md);
-  padding: 1rem;
-  box-shadow: var(--shadow-md);
-  text-align: center;
-  transition: transform 0.2s ease;
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: transform 0.2s ease;
 
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-areas: 
     "photograph"
     "name"
     "description"
-    "address";
+    "address"
+    "button";
   }
   
-  .business-card:hover {
+  .business-card-dis:hover {
   transform: translateY(-5px);
   }
 
-  .business-card h2 {
+  .business-card-dis h2 {
     margin: 1REM 10PX;
     grid-area: name;
   }
 
-  .business-card figure img{
+  .business-card-dis figure img{
     width: 100%;
     grid-area: photograph;
   }
   
-  .business-card address{
+  .business-card-dis address{
     width: 100%;
     grid-area: address;
   }
   
-
-  .business-card p{
+  .business-card-dis p{
     width: 100%;
     grid-area: description;
   }
+  
+  .business-card-dis button{
+    width: 7rem;
+    grid-area: button;
+  }
+
 }

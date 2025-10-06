@@ -9,7 +9,7 @@ export async function loadDiscover() {
     container.innerHTML = "";
     data.forEach(business => {
       const card = document.createElement("div");
-      card.classList.add("business-card");
+      card.classList.add("business-card-dis");
 
       card.innerHTML = `
           <figure>

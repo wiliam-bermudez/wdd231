@@ -3,48 +3,48 @@
     "name": "Petit Market",
     "address": "Timbuktu, Mali (Central Area)",
     "description": "A vibrant, bustling local market where you can find a mix of local culture, traditional crafts, fresh produce, and authentic Malian cuisine. It serves as a major hub for daily commerce.",
-    "image_url": "http://googleusercontent.com/image_generation_content/0"
+    "image_url": "images/Bussines1-discover.webp"
   },
   {
     "name": "Mariam (General Store)",
     "address": "Q2J2+Q9Q, Unnamed Road, Timbuktu, ML (Near Sankore Mosque)",
     "description": "A general store offering authentic local crafts, traditional Malian textiles, locally sourced spices, and delicious snacks. It serves as a cultural hub for visitors and locals.",
-    "image_url": "http://googleusercontent.com/image_generation_content/1"
+    "image_url": "images/Bussines2-discover.webp"
   },
   {
     "name": "Toyota Boutique",
     "address": "Timbuktu, Mali",
     "description": "A retail store specializing in the sale of genuine Toyota auto parts, catering to the vehicle repair and maintenance needs of the region.",
-    "image_url": "http://googleusercontent.com/image_generation_content/2"
+    "image_url": "images/Bussines3-discover.webp"
   },
   {
     "name": "Istanbul pour Les Parfums et le Commerce General",
     "address": "Timbuktu, Mali",
     "description": "A general commerce store that focuses on perfumes and various general goods, blending local and possibly imported products.",
-    "image_url": "http://googleusercontent.com/image_generation_content/3"
+    "image_url": "images/Bussines4-discover.webp"
   },
   {
     "name": "DOUCOURE ET FRERES",
     "address": "Timbuktu, Mali",
     "description": "A local grocery store offering traditional Malian food products, unique finds, and everyday groceries to the community.",
-    "image_url": "http://googleusercontent.com/image_generation_content/4"
+    "image_url": "images/Bussines5-discover.webp"
   },
   {
     "name": "Boulangerie GDF",
     "address": "Timbuktu, Mali",
     "description": "A local bakery (boulangerie) specializing in traditional Malian and possibly French-style baked goods, a key source of fresh bread for the community.",
-    "image_url": "http://googleusercontent.com/image_generation_content/5"
+    "image_url": "images/Bussines6-discover.webp"
   },
   {
     "name": "SOUK EL SALAAM (Market)",
     "address": "Timbuktu, Mali (Central Market Area)",
     "description": "Known as the 'Market of Peace,' this is a cultural marketplace featuring a vibrant atmosphere with handmade crafts, street food, and traditional goods.",
-    "image_url": "http://googleusercontent.com/image_generation_content/6"
+    "image_url": "images/Bussines7-discover.webp"
   },
   {
     "name": "Local Hairdresser/Barber Shop",
     "address": "Timbuktu, Mali (Various Streets)",
     "description": "Small local establishments where people go for haircuts and styling, often identifiable by hand-painted signs with photos of various hairstyles.",
-    "image_url": "http://googleusercontent.com/image_generation_content/7"
+    "image_url": "images/Bussines8-discover.webp"
   }
 ]
