@@ -373,6 +373,14 @@ input[type="submit"]:focus {
 
   }
 
+   #message-box {
+      background: #fff;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
   
 
 /* FOOTER */
@@ -508,7 +516,7 @@ footer {
       "photograph name"
       "photograph description"
       "photograph address"
-      "button";
+
       
     }
     
@@ -536,7 +544,6 @@ footer {
 
     .business-card-dis button{
       width: 9rem;
-      grid-area: button;
     }
 
 

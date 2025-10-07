@@ -28,3 +28,30 @@ export async function loadDiscover() {
     container.innerHTML = "<p>Unable to load business data.</p>";
   }
 }
+
+
+export const messageBox = document.getElementById('message-box');
+
+    // Retrieve last visit from localStorage
+    const lastVisit = localStorage.getItem('lastVisit');
+    const currentTime = Date.now();
+
+    if (!lastVisit) {
+      // First visit
+      messageBox.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+      const lastVisitTime = Number(lastVisit);
+      const timeDifference = currentTime - lastVisitTime;
+      const daysBetween = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+      if (timeDifference < 1000 * 60 * 60 * 24) {
+        messageBox.textContent = "Back so soon! Awesome!";
+      } else if (daysBetween === 1) {
+        messageBox.textContent = `You last visited ${daysBetween} day ago.`;
+      } else {
+        messageBox.textContent = `You last visited ${daysBetween} days ago.`;
+      }
+    }
+
+    // Store current visit time for the next visit
+    localStorage.setItem('lastVisit', currentTime);
