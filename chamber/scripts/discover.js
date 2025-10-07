@@ -27,10 +27,8 @@ export async function loadDiscover() {
     console.error("Error loading businesses:", error);
     container.innerHTML = "<p>Unable to load business data.</p>";
   }
-}
 
-
-export const messageBox = document.getElementById('message-box');
+  const messageBox = document.getElementById('message-box');
 
     // Retrieve last visit from localStorage
     const lastVisit = localStorage.getItem('lastVisit');
@@ -55,3 +53,6 @@ export const messageBox = document.getElementById('message-box');
 
     // Store current visit time for the next visit
     localStorage.setItem('lastVisit', currentTime);
+}
+
+
