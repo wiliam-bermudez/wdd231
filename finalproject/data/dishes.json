@@ -1,0 +1,102 @@
+{
+  "salvadoran_dishes": [
+    {
+      "name": "Pupusas",
+      "description": "The national dish of El Salvador. These are thick, hand-made corn or rice flour tortillas stuffed with a mixture of ingredients like cheese, refried beans, chicharrón (cooked pork ground to a paste), or loroco (an edible flower bud). They are served with curtido (a fermented cabbage relish) and tomato sauce.",
+      "photo": "images/pupusas.webp",
+      "price" : "40 MXN per person",
+      "category" : "Gold"
+    },
+    {
+      "name": "Yuca Frita or Sancochada",
+      "description": "A popular snack where yuca (cassava) is served in two ways: fried (crunchy) or 'sancochada' (boiled and soft). It's traditionally topped with pieces of chicharrón (pork rinds), curtido, and tomato sauce.",
+      "photo": "images/yuca.webp",
+      "price" : "30 MXN per person",
+      "category" : "Premium"
+    },
+    {
+      "name": "Sopa de Pata",
+      "description": "A hearty and comforting soup. Its main ingredients are cow's feet and tripe, cooked in a thick broth with various vegetables like yuca, plantain, cabbage, green beans, and spices. Lime and sometimes chili are added when serving.",
+      "photo": "images/sopa_patas.webp",
+      "price" : "60 MXN per person",
+      "category" : "Silver"
+    },
+    {
+      "name": "Tamales",
+      "description": "A corn-based dough wrapped and cooked in plantain leaves. Fillings vary, with common options being chicken or pork with vegetables (Tamales de Pollo o Cerdo) or black beans (Tamales Pisques). The Tamal de Elote is sweet, made from tender corn.",
+      "photo": "images/tamales.webp",
+      "price" : "30 MXN per person",
+      "category" : "Premium"
+    },
+    {
+      "name": "Empanadas de Plátano",
+      "description": "A sweet snack or dessert. It consists of a dough made from ripe, cooked, and mashed plantains, typically stuffed with sweet beans or a milk-based custard known as 'poleada'. They are fried until golden and sprinkled with sugar.",
+      "photo": "images/empanadas.webp",
+      "price" : "30 MXN per person",
+      "category" : "Silver"
+    },
+    {
+      "name": "Panes Rellenos",
+      "description": "Known as 'Stuffed Breads,' these are large, moist sandwiches. They feature a French-style roll stuffed with pieces of hen (often 'gallina india') and smothered in a rich tomato sauce. Toppings include curtido, cucumber, tomato, and watercress.",
+      "photo": "images/panes.webp",
+      "price" : "80 MXN per person",
+      "category" : "Gold"
+    },
+    {
+      "name": "Riguas",
+      "description": "Flat, thin patties made from tender corn dough. They are cooked on a griddle or 'comal' wrapped in a plantain leaf, which imparts a unique flavor. They are often eaten for breakfast or as a snack with cheese and fresh cream.",
+      "photo": "images/riguas.webp",
+      "price" : "40 MXN per person",
+      "category" : "Premium"
+    },
+    {
+      "name": "Atol Shuco",
+      "description": "Although technically a beverage, it's a very substantial and traditional 'food' item. It's a thick, hot corn drink made from fermented corn (often black or toasted), which gives it a slightly sour taste. It is served with beans and toasted, ground pumpkin seeds.",
+      "photo": "",
+      "price" : "40 MXN per person",
+      "category" : "Gold"
+    },
+    {
+      "name": "Gallo en Chicha (Rooster in Chicha)",
+      "description": "A traditional dish with a sweet and sour flavor. It consists of rooster or chicken meat cooked in a thick sauce based on 'chicha' (a fermented corn drink), panela (cane sugar), and sometimes pineapple, which gives it a distinctive taste.",
+      "photo": "images/gallo-chicha.webp",
+      "price" : "70 MXN per person"
+    },
+    {
+      "name": "Pastelitos (Savory Turnovers)",
+      "description": "Small, deep-fried turnovers made from corn dough colored with achiote (annatto). The most common filling is potato and seasoned beef or chicken stewed with vegetables (generally carrots and green beans). They are served hot with curtido and tomato sauce.",
+      "photo": "images/pastelitos.webp",
+      "price" : "40 MXN per person"
+    },
+    {
+      "name": "Canoas de Plátano (Plantain Canoes)",
+      "description": "A delicious dessert. They are made with a fried ripe plantain (which forms the 'canoe') and filled with 'poleada' (a thick sweet custard made with milk, cornstarch, and cinnamon). They are often decorated with raisins and shredded coconut.",
+      "photo": "images/canoas.webp",
+      "price" : "40 MXN per person"
+    },
+    {
+      "name": "Nuégados de Yuca (Yuca Fritters)",
+      "description": "A popular sweet snack. They are fritters or dumplings made from yuca (cassava) or, sometimes, corn dough, fried until golden and crispy. They are generously bathed in a thick syrup made from panela (raw cane sugar block) with spices.",
+      "photo": "images/nuegados.webp",
+      "price" : "20 MXN per person"
+    },
+    {
+      "name": "Elotes Locos (Crazy Corn)",
+      "description": "A beloved street snack. It consists of a cooked corn on the cob (on a stick) covered with a layer of mayonnaise, ketchup, mustard, and black sauce (like Worcestershire sauce). It is finished with grated cheese and sometimes chili powder.",
+      "photo": "images/elotes.webp",
+      "price" : "20 MXN per person"
+    },
+    {
+      "name": "Mariscada (Seafood Soup)",
+      "description": "A very popular creamy seafood soup in coastal areas. It is a hearty and substantial broth that includes a variety of seafood such as shrimp, clams, fish, and crab (jaibas). It is cooked with milk or cream and spices.",
+      "photo": "images/mariscada.webp",
+      "price" : "80 MXN per person"
+    },
+    {
+      "name": "Quesadilla Salvadoreña (Salvadoran Quesadilla Cake)",
+      "description": "Unlike the Mexican quesadilla, this is a sweet bread or dessert. It is a dense, spongy cake made from hard cheese (like queso fresco or Parmesan), milk, and sour cream, baked until golden and sprinkled with sesame seeds.",
+      "photo": "images/quesadilla.webp",
+      "price" : "50 MXN per person"
+    }
+  ]
+}

@@ -340,7 +340,7 @@ input[type="submit"]:focus {
     text-align: center;
     transition: transform 0.2s ease;
 
-  }
+    }
   
   .business-card-dis:hover {
   transform: translateY(-5px);

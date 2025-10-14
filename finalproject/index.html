@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <title>WDD231 Home - Wiliam Bermudez</title>
+  <meta name="description" content="Home page to provide more information about Timbuktu. Showing the weather and moreimportant facts about the community and people of Timbuktu." />
+  <meta name="author" content="Wiliam Bermudez"/>
+
+    <!-- CSS LINK-->
+  <link rel="stylesheet" href="styles/finalproject.css">
+
+  <!-- JS LINK-->
+  <script type="module" src="scripts/index.js"></script>
+
+  <!--Linking favicon-->
+  <link rel="icon" href="images/logo.png">
+
+  <!--Open Graph for Facebook-->
+  <meta property="og:title" content="DelSalvafood - for Parties">
+  <meta property="og:description" content="Providing information about the best option for your parties. The best food of El Salvador to have an unforgettable experience.">
+  <meta property="og:image" content="images/social-preview.webp">
+  <meta property="og:url" content="https://wiliam-bermudez.github.io/wdd231/finalproject/index.html">
+
+</head>
+<body>
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.png" alt="DelSalvafood logo" class="logo">
+            <span class="site-title">DelSalvafood - For Parties</span>
+        </div>
+
+        <nav id="main-nav" class="nav-desktop">
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hamburger Menu -->
+        <button id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+            ☰
+        </button>
+
+        <nav id="mobile-nav" class="nav-mobile" hidden>
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <picture>
+            <source srcset="images/hero-img.png">
+            <img src="images/hero-img.png" alt="Traditional Salvadoran food party table" loading="lazy">
+        </picture>
+        <div class="hero-text">
+            <h1>The Best of El Salvador On Your Table</h1>
+            <p>Fresh, authentic, and ready for your next party.</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- ===== FEATURED DISHES (Top 3) ===== -->
+        <section class="featured-dishes">
+            <h2>Top Picks</h2>
+            <div class="featured-wrapper">
+                
+                    <div class="placeholder-circle" aria-hidden="true">
+                        <img src="images/pupusas.webp" alt="">
+                        <h3>Dish #1</h3>
+                    </div>
+                    
+
+                    <div class="placeholder-circle" aria-hidden="true">
+                        <img src="images/pupusas.webp" alt="">
+                        <h3>Dish #2</h3>
+                    </div>
+                    
+                    <div class="placeholder-circle">
+                        <img src="images/pupusas.webp" alt="">
+                        <h3>Dish #3</h3>
+                    </div>
+                    
+            </div>
+        </section>
+
+        <!-- ===== CATEGORY FILTERS ===== -->
+        <section class="filters">
+            <button class="filter-btn" data-category="all">All</button>
+            <button class="filter-btn" data-category="cat1">Category #1</button>
+            <button class="filter-btn" data-category="cat2">Category #2</button>
+            <button class="filter-btn" data-category="cat3">Category #3</button>
+        </section>
+
+        <!-- ===== DYNAMIC DISH GRID (15+ items via fetch) ===== -->
+        <section class="dish-grid" id="dish-grid">
+            <!-- JS will inject cards here using template literals -->
+        </section>
+
+        <!-- ===== MODAL PLACEHOLDER (for dish details or cart action) ===== -->
+        <dialog id="dish-modal" aria-labelledby="modal-title">
+            <div class="modal-content">
+                <h2 id="modal-title">Dish Details</h2>
+                <p id="modal-description"></p>
+                <button id="close-modal">Close</button>
+            </div>
+        </dialog>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="info-footer">
+            <p>Timbuktu Chamber of Commerce | 10 Rue De La Paix | Timbuktu, Mali 999</p>
+            <p>Email: info@timbuktucc.org | Phone: (223) 555-2300</p>
+        </div>
+
+        <div class="social-media-footer">
+            <a href="#"><img src="images/facebook.png" alt="Facebook logo"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram logo"></a>
+            <a href="#"><img src="images/twitter.png" alt="X Logo"></a>
+        </div>
+
+        <div class="credits-footer">
+            <p>&copy; <span id="year"></span> Timbuktu Chamber | Wiliam Bermudez | WDD231</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+        
+    </footer>
+</body>
+</html>
