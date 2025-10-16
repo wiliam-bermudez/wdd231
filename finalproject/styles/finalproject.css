@@ -281,6 +281,22 @@ header {
     transform: translateY(-2px);
   }
 
+  /* THANK YOU.HTML */
+
+  #thankyou {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 80%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    margin: auto;
+  }
+
 
 /* ========== FILTER BUTTONS ========== */
 .filters {
@@ -580,4 +596,20 @@ footer {
     }
   }
 
+  /* THANK YOU.HTML */
+
+  #thankyou {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    margin: auto;
+  }
+  
 }

@@ -1,3 +1,5 @@
+
+
 // main.js
 
 async function loadDishes() {
@@ -78,6 +80,7 @@ function setupMenu() {
     if (year) year.textContent = new Date().getFullYear();
     if (lastModified) lastModified.textContent = document.lastModified;
 }
+setupMenu();
 
 
 
@@ -157,12 +160,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const results = document.getElementById('formInfo');
     results.innerHTML = `
-    <p><strong>First name:</strong> ${params.get('firstName')}.</p>
-    <p><strong>Last name:</strong> ${params.get('lastName')}.</p>
-    <p><strong>Organization title:</strong> ${params.get('orgTitle')}.</p>
+    <p><strong>First name:</strong> ${params.get('fullname')}.</p>
     <p><strong>Email:</strong> ${params.get('email')}.</p>
-    <p><strong>Phone:</strong> ${params.get('phone')}.</p>
-    <p><strong>Organization:</strong> ${params.get('organization')}.</p>
-    <p><strong>Membership:</strong> ${params.get('membership')}.</p>
-    <p><strong>Descrption:</strong> ${params.get('orgDescription')}.</p>`
+    <p><strong>Phone:</strong> ${params.get('phonenumber')}.</p>
+    <p><strong>Date of Event:</strong> ${params.get('dateEvent')}.</p>`
     });

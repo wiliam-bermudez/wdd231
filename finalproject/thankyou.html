@@ -28,16 +28,45 @@
 </head>
 <body>
 
-    <main>
-        <h2>Thank You for filling the form!</h2>
-        <p>We have received your information. We will get in touch with you shortly.
-            SEE YOU IN THE PARTY!
-        </p>
-        <H3>YOUR INFORMATION</H3>
-        <div id="formInfo">
+        <header>
+        <div class="logo-area">
+            <img src="images/logo.png" alt="DelSalvafood logo" class="logo">
+            <span class="site-title">DelSalvafood - For Parties</span>
+        </div>
 
-        
-        
+        <nav id="main-nav" class="nav-desktop">
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hamburger Menu -->
+        <button id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+            ☰
+        </button>
+
+        <nav id="mobile-nav" class="nav-mobile" hidden>
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="thankyou">
+            <h2>Thank You for filling the form!</h2>
+            <p>We have received your information. We will get in touch with you shortly.
+                SEE YOU IN THE PARTY!
+            </p>
+            <H3>YOUR INFORMATION</H3>
+            <div id="formInfo">
+
+        </section>        
     </div>
 
     </main>
