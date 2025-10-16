@@ -133,7 +133,7 @@ header {
 }
 
 .hero-text h1 {
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -220,6 +220,67 @@ header {
     width: 7rem;
     grid-area: button;
   }
+
+
+
+ /*========== CONTACT.HTML  =========== */
+  
+#form-contact {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* === FORM LABELS & INPUTS === */
+  #form-contact label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: var(--cerulean);
+  }
+
+  #form-contact input,
+  #form-contact select {
+    padding: 0.6rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 4px;
+    background-color: var(--background);
+    transition: border 0.3s ease;
+  }
+
+  #form-contact input:focus,
+  #form-contact select:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  }
+
+  /* === SUBMIT BUTTON === */
+  #form-contact input[type="submit"] {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  #form-contact input[type="submit"]:hover {
+    background-color: var(--jonquil);
+    color: black;
+    transform: translateY(-2px);
+  }
+
 
 /* ========== FILTER BUTTONS ========== */
 .filters {
@@ -360,37 +421,57 @@ footer {
     transition: transform 0.2s ease;
 
   }
-  
-  .menu-card-dis:hover {
-  transform: translateY(-5px);
+
+    .hero-text {
+    position: absolute;
+    text-align: center;
+    color: var(--text);
+    padding: 1rem 2rem;
+    backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
   }
 
-  .menu-card-dis h2 {
-    grid-area: name;
+  .hero-text h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
   }
 
-  .menu-card-dis figure img{
-    width: 175px;
-    grid-area: photograph;
+  .hero-text p {
+    font-size: 1.2rem;
+    opacity: 0.9;
   }
-  
-  .menu-card-dis address{
-    width: 100%;
-    grid-area: address;
-  }
-  
+    
+    .menu-card-dis:hover {
+    transform: translateY(-5px);
+    }
 
-  .menu-card-dis p{
-    width: 100%;
-    grid-area: description;
-  }
+    .menu-card-dis h2 {
+      grid-area: name;
+    }
 
- .menu-card-dis button{
-    width: 7rem;
-    height: 3rem;
-    grid-area: button;
+    .menu-card-dis figure img{
+      width: 175px;
+      grid-area: photograph;
+    }
+    
+    .menu-card-dis address{
+      width: 100%;
+      grid-area: address;
+    }
+    
 
-  }
+    .menu-card-dis p{
+      width: 100%;
+      grid-area: description;
+    }
+
+  .menu-card-dis button{
+      width: 7rem;
+      height: 3rem;
+      grid-area: button;
+
+    }
 
 
   dialog {
@@ -403,12 +484,100 @@ footer {
   padding: 20px;
   margin: auto;
   
-}
-::backdrop {
-    background-color: rgb(0 0 0 / 50%);
   }
-.modal-content {
-  text-align: center;
-}
+  ::backdrop {
+      background-color: rgb(0 0 0 / 50%);
+    }
+  .modal-content {
+    text-align: center;
+  }
+
+
+  /* CONTACT.CSS */ 
+   #form-contact {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+   #form-contact label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: var(--cerulean);
+  }
+
+  #form-contact input,
+  #form-contact select {
+    padding: 0.6rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 4px;
+    background-color: var(--background);
+    transition: border 0.3s ease;
+  }
+
+  #form-contact input:focus,
+  #form-contact select:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  }
+
+  /* === SUBMIT BUTTON === */
+  #form-contact input[type="submit"] {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  #form-contact input[type="submit"]:hover {
+    background-color: var(--jonquil);
+    color: black;
+    transform: translateY(-2px);
+  }
+
+  #Formandtestimonies {
+    display: flex;
+    gap: 15rem;
+  }
+
+  #testimonies {
+    display: block;
+    gap: 2rem;
+  }
+  #testimonies figure img{
+    width: 300px;
+    height: 150px;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 0.8s ease forwards;
+    border-radius: 5%;
+  }
+
+  .events .card:nth-child(1) { animation-delay: 0.2s; }
+  .events .card:nth-child(2) { animation-delay: 0.4s; }
+  .events .card:nth-child(3) { animation-delay: 0.6s; }
+  .events .card:nth-child(4) { animation-delay: 0.8s; }
+
+  @keyframes fadeSlideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 }

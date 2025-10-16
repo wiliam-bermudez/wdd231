@@ -54,6 +54,88 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <H1>DelSalvafood</H1>
+        <section id="Formandtestimonies">
+            <form action="thankyou.html" id="form-contact">
+                <label>
+                    Full Name:
+                    <input type="text" name="fullname" title="Enter your full name"
+                        autocomplete="given-name" required>
+                </label>
+
+                <label>
+                    Phone Number:
+                    <input type="text" name="phonenumber" title="Enter your phone number"
+                        autocomplete="tel" required>
+                </label>
+
+                <label>
+                Email:
+                <input type="email" name="email" title="Enter your email address"
+                        autocomplete="email" placeholder="example@domain.com" required>
+                </label>
+
+                <label>
+                Expected date for the event: 
+                    <input type="date" name="dateEvent"
+                        required>
+                </label>
+
+                <label>
+                Event type:
+                <select name="eventType" title="Select event type">
+                    <option value="Birthday">Birthday</option>
+                    <option value="Prom Party">Prom Party</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Other">Other (More information will be required)</option>
+                </select>
+                </label>           
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Submit Application">
+
+            </form>
+
+
+            <div id="testimonies">
+                <figure class="events">
+                    <img src="images/Event1.webp" alt="Envent #1" loading="lazy">
+                </figure>
+                
+                <figure class="events">
+                    <img src="images/Event2.webp" alt="Envent #2" loading="lazy">
+                </figure>
+
+                <figure class="events">
+                    <img src="images/Event3.webp" alt="Envent #3" loading="lazy">
+                </figure>
+
+            </div>
+
+        </section>
+        
+    </main>
     
+    <footer>
+        <div class="info-footer">
+            <p>Timbuktu Chamber of Commerce | 10 Rue De La Paix | Timbuktu, Mali 999</p>
+            <p>Email: info@timbuktucc.org | Phone: (223) 555-2300</p>
+        </div>
+
+        <div class="social-media-footer">
+            <a href="#"><img src="images/facebook.png" alt="Facebook logo"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram logo"></a>
+            <a href="#"><img src="images/twitter.png" alt="X Logo"></a>
+        </div>
+
+        <div class="credits-footer">
+            <p>&copy; <span id="year"></span> Timbuktu Chamber | Wiliam Bermudez | WDD231</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+        
+    </footer>
 </body>
 </html>

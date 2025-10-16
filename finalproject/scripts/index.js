@@ -140,6 +140,7 @@ async function loadMenu() {
   }
 }
 
-
-
 loadMenu()
+
+/* THANK YOU.HTML */ 
+window.addEventListener("DOMContentLoaded", ())
