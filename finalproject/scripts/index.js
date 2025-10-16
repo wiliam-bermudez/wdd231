@@ -145,9 +145,9 @@ loadMenu()
 /* THANK YOU.HTML */ 
 window.addEventListener("DOMContentLoaded", () => {
       const params = new URLSearchParams(window.location.search);
-      console.log(params.get("firstName"));
-      console.log(params.get("lasttName"));
-      console.log(params.get("orgTitle"));
+      console.log(params.get("fullname"));
+      console.log(params.get("phonenumber"));
+      console.log(params.get("dateEvent"));
       console.log(params.get("email"));
       console.log(params.get("phone"));
       console.log(params.get("organization"));
