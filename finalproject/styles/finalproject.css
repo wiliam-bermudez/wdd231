@@ -1,18 +1,19 @@
+/* ========== ROOT VARIABLES  ========== */
 :root {
-  --pacific-cyan: #06aed5ff;
-  --cerulean: #086788ff;
-  --jonquil: #f0c808ff;
-  --papaya-whip: rgb(236, 225, 197);
+  --pacific-cyan: #005f73;   
+  --cerulean: #003049;       
+  --jonquil: #ffb703;        
+  --papaya-whip: #f1e9d2;    
+  --text: #ffffff;           
+  --muted: #1a1a1a;          
 
   --primary: var(--cerulean);
   --secondary: var(--jonquil);
   --background: var(--papaya-whip);
-  --text: #ffffff;
-  --muted: #444;
+
 }
 
-/* ========== ROOT VARIABLES (ya definidas por ti, aquí solo las uso) ========== */
-/* NO redefino las variables para evitar duplicados */
+
 
 /* ========== GLOBAL RESETS ========== */
 * {
@@ -53,13 +54,17 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 2px solid var(--primary);
+  border-bottom: 2px solid white;
 }
 
 .logo-area {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.logo-area span {
+  color: var(--text);
 }
 
 .logo {
@@ -93,7 +98,7 @@ header {
 
 .nav-mobile ul li a,
 .nav-desktop ul li a {
-  color: rgb(32, 30, 30);
+  color:var(--text);
   text-decoration: none;
 }
 
@@ -116,7 +121,6 @@ header {
 .hero {
   position: relative;
   height: 75vh;
-  background: url('ruta-de-tu-imagen.webp') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,13 +165,27 @@ header {
   height: 80px;
   background: #ddd;
   border-radius: 50%;
+  object-fit: cover; 
   margin: 0 auto;
   margin-top: 3rem;
 }
 
+.placeholder-circle {
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .dish-card img {
-  height: 8rem;
   width: 9rem;
+  height: 150px; 
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
 }
 
 
