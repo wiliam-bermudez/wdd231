@@ -52,7 +52,7 @@
     {
       "name": "Atol Shuco",
       "description": "Although technically a beverage, it's a very substantial and traditional 'food' item. It's a thick, hot corn drink made from fermented corn (often black or toasted), which gives it a slightly sour taste. It is served with beans and toasted, ground pumpkin seeds.",
-      "photo": "",
+      "photo": "images/chuco.webp",
       "price" : "40 MXN per person",
       "category" : "Gold"
     },
@@ -60,43 +60,50 @@
       "name": "Gallo en Chicha (Rooster in Chicha)",
       "description": "A traditional dish with a sweet and sour flavor. It consists of rooster or chicken meat cooked in a thick sauce based on 'chicha' (a fermented corn drink), panela (cane sugar), and sometimes pineapple, which gives it a distinctive taste.",
       "photo": "images/gallo-chicha.webp",
-      "price" : "70 MXN per person"
+      "price" : "70 MXN per person",
+      "category" : "Gold"
     },
     {
       "name": "Pastelitos (Savory Turnovers)",
       "description": "Small, deep-fried turnovers made from corn dough colored with achiote (annatto). The most common filling is potato and seasoned beef or chicken stewed with vegetables (generally carrots and green beans). They are served hot with curtido and tomato sauce.",
       "photo": "images/pastelitos.webp",
-      "price" : "40 MXN per person"
+      "price" : "40 MXN per person",
+      "category" : "Silver"
     },
     {
       "name": "Canoas de Plátano (Plantain Canoes)",
       "description": "A delicious dessert. They are made with a fried ripe plantain (which forms the 'canoe') and filled with 'poleada' (a thick sweet custard made with milk, cornstarch, and cinnamon). They are often decorated with raisins and shredded coconut.",
       "photo": "images/canoas.webp",
-      "price" : "40 MXN per person"
+      "price" : "40 MXN per person",
+      "category" : "Gold"
     },
     {
       "name": "Nuégados de Yuca (Yuca Fritters)",
       "description": "A popular sweet snack. They are fritters or dumplings made from yuca (cassava) or, sometimes, corn dough, fried until golden and crispy. They are generously bathed in a thick syrup made from panela (raw cane sugar block) with spices.",
       "photo": "images/nuegados.webp",
-      "price" : "20 MXN per person"
+      "price" : "20 MXN per person",
+      "category" : "Premium"
     },
     {
       "name": "Elotes Locos (Crazy Corn)",
       "description": "A beloved street snack. It consists of a cooked corn on the cob (on a stick) covered with a layer of mayonnaise, ketchup, mustard, and black sauce (like Worcestershire sauce). It is finished with grated cheese and sometimes chili powder.",
       "photo": "images/elotes.webp",
-      "price" : "20 MXN per person"
+      "price" : "20 MXN per person",
+      "category" : "Silver"
     },
     {
       "name": "Mariscada (Seafood Soup)",
       "description": "A very popular creamy seafood soup in coastal areas. It is a hearty and substantial broth that includes a variety of seafood such as shrimp, clams, fish, and crab (jaibas). It is cooked with milk or cream and spices.",
       "photo": "images/mariscada.webp",
-      "price" : "80 MXN per person"
+      "price" : "80 MXN per person",
+      "category" : "Gold"
     },
     {
       "name": "Quesadilla Salvadoreña (Salvadoran Quesadilla Cake)",
       "description": "Unlike the Mexican quesadilla, this is a sweet bread or dessert. It is a dense, spongy cake made from hard cheese (like queso fresco or Parmesan), milk, and sour cream, baked until golden and sprinkled with sesame seeds.",
       "photo": "images/quesadilla.webp",
-      "price" : "50 MXN per person"
+      "price" : "50 MXN per person",
+      "category" : "Premium"
     }
   ]
 }

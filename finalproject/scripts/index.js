@@ -1,8 +1,5 @@
-
-
-// main.js
-
-async function loadDishes() {
+// index.js
+export async function loadDishes() {
   const container = document.getElementById("dish-grid");
   if (!container) return;
 
@@ -13,7 +10,6 @@ async function loadDishes() {
     const data = await response.json();
     const dishes = data.salvadoran_dishes;
 
-    
     container.innerHTML = "";
     dishes.forEach(dish => {
       const card = document.createElement("div");
@@ -29,7 +25,7 @@ async function loadDishes() {
       container.appendChild(card);
     });
 
-  
+    // Filtrado de categorías
     const filterBtns = document.querySelectorAll(".filter-btn");
     filterBtns.forEach(btn => {
       btn.addEventListener("click", () => {
@@ -37,7 +33,6 @@ async function loadDishes() {
         const cards = document.querySelectorAll(".dish-card");
 
         cards.forEach(card => {
-          // Map Category #1,2,3 a Gold, Silver, Premium
           let catMap = {
             "cat1": "Gold",
             "cat2": "Silver",
@@ -58,114 +53,3 @@ async function loadDishes() {
     container.innerHTML = "<p>Unable to load dishes data.</p>";
   }
 }
-loadDishes();
-
-/* NAV JS*/
-
-function setupMenu() {
-    const menuButton = document.getElementById("menu-toggle");
-    const mobileNav = document.getElementById("mobile-nav");
-
-    if (menuButton && mobileNav) {
-        menuButton.addEventListener("click", () => {
-            const isHidden = mobileNav.hasAttribute("hidden");
-            if (isHidden) {
-                mobileNav.removeAttribute("hidden");
-                menuButton.setAttribute("aria-expanded", "true");
-            } else {
-                mobileNav.setAttribute("hidden", "");
-                menuButton.setAttribute("aria-expanded", "false");
-            }
-        });
-    }
-
-    const year = document.getElementById("year");
-    const lastModified = document.getElementById("lastModified");
-
-    if (year) year.textContent = new Date().getFullYear();
-    if (lastModified) lastModified.textContent = document.lastModified;
-}
-setupMenu();
-
-
-
-/* MENU.JS */
-
-async function loadMenu() {
-  const container = document.getElementById("menu-container");
-  const Modal = document.getElementById("Desc-modal");
-  const Closemodal = document.getElementById("closeModal");
-  const contentModal = document.getElementById("Content-modal");
-
-  if (!container) return;
-
-  try {
-    const response = await fetch("data/dishes.json");
-    const data = await response.json();
-    const dishes = data.salvadoran_dishes;
-
-    container.innerHTML = "";
-    dishes.forEach(dish => {
-  const card = document.createElement("div");
-  card.classList.add("menu-card-dis");
-
-  card.innerHTML = `
-      <figure>
-        <img src="${dish.photo}" alt="${dish.name} logo" loading="lazy">
-      </figure>
-      <h2>${dish.name}</h2>
-      <p>${dish.price}</p>
-      <button class="learn-more-btn" data-name="${dish.name}" data-description="${dish.description}" data-price="${dish.price}">Learn More</button>
-  `;
-      container.appendChild(card);
-    });
-
-   const modalButtons = document.querySelectorAll(".learn-more-btn");
-
-     modalButtons.forEach(btn => {
-       btn.addEventListener("click", () => {
-         const name = btn.getAttribute("data-name");
-         const description = btn.getAttribute("data-description");
-         const price = btn.getAttribute("data-price");
-
-         contentModal.innerHTML = `
-           <h2>${name}</h2>
-           <p>${description}</p>
-           <strong>Price: ${price}</strong>
-         `;
-
-         Modal.showModal();
-       });
-     });
-
-     Closemodal.addEventListener("click", () => {
-       Modal.close();
-     });
-
-  } catch (error) {
-    console.error("Error loading businesses:", error);
-    container.innerHTML = "<p>Unable to load business data.</p>";
-  }
-}
-
-loadMenu()
-
-/* THANK YOU.HTML */ 
-window.addEventListener("DOMContentLoaded", () => {
-      const params = new URLSearchParams(window.location.search);
-      console.log(params.get("fullname"));
-      console.log(params.get("phonenumber"));
-      console.log(params.get("dateEvent"));
-      console.log(params.get("email"));
-      console.log(params.get("phone"));
-      console.log(params.get("eventType"));
-
-
-    const results = document.getElementById('formInfo');
-    results.innerHTML = `
-    <p><strong>First name:</strong> ${params.get('fullname')}.</p>
-    <p><strong>Email:</strong> ${params.get('email')}.</p>
-    <p><strong>Phone:</strong> ${params.get('phonenumber')}.</p>
-    <p><strong>Date of Event:</strong> ${params.get('dateEvent')}.</p>
-    <p><strong>Type of Event:</strong> ${params.get('eventType')}.</p>`
-    });
