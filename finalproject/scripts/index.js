@@ -58,19 +58,24 @@ async function loadDishes() {
     container.innerHTML = "<p>Unable to load dishes data.</p>";
   }
 }
-
-
 loadDishes();
 
 /* NAV JS*/
 
 function setupMenu() {
-    const menuButton = document.getElementById("mobile-nav");
-    const navLinks = document.getElementById("nav-links");
+    const menuButton = document.getElementById("menu-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
 
-    if (menuButton && navLinks) {
+    if (menuButton && mobileNav) {
         menuButton.addEventListener("click", () => {
-            navLinks.classList.toggle("open");
+            const isHidden = mobileNav.hasAttribute("hidden");
+            if (isHidden) {
+                mobileNav.removeAttribute("hidden");
+                menuButton.setAttribute("aria-expanded", "true");
+            } else {
+                mobileNav.setAttribute("hidden", "");
+                menuButton.setAttribute("aria-expanded", "false");
+            }
         });
     }
 
@@ -153,9 +158,7 @@ window.addEventListener("DOMContentLoaded", () => {
       console.log(params.get("dateEvent"));
       console.log(params.get("email"));
       console.log(params.get("phone"));
-      console.log(params.get("organization"));
-      console.log(params.get("membership"));
-      console.log(params.get("orgDescription"));
+      console.log(params.get("eventType"));
 
 
     const results = document.getElementById('formInfo');
@@ -163,5 +166,6 @@ window.addEventListener("DOMContentLoaded", () => {
     <p><strong>First name:</strong> ${params.get('fullname')}.</p>
     <p><strong>Email:</strong> ${params.get('email')}.</p>
     <p><strong>Phone:</strong> ${params.get('phonenumber')}.</p>
-    <p><strong>Date of Event:</strong> ${params.get('dateEvent')}.</p>`
+    <p><strong>Date of Event:</strong> ${params.get('dateEvent')}.</p>
+    <p><strong>Type of Event:</strong> ${params.get('eventType')}.</p>`
     });
